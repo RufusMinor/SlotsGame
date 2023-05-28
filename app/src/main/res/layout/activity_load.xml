@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/fon1"
+    android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+
+    <ImageView
+        android:id="@+id/ramka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="700dp"
+        android:visibility="visible"
+        android:src="@drawable/ramka_load"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icecream1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_load"
+        android:visibility="invisible"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="@+id/ramka"
+        app:layout_constraintTop_toTopOf="@+id/ramka" />
+
+    <ImageView
+        android:id="@+id/icecream2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible"
+        android:src="@drawable/ic_load"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/icecream1"
+        app:layout_constraintTop_toTopOf="@+id/ramka" />
+
+    <ImageView
+        android:id="@+id/icecream3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_load"
+        android:visibility="invisible"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@+id/icecream2"
+        app:layout_constraintTop_toTopOf="@+id/ramka" />
+
+    <ImageView
+        android:id="@+id/icecream4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_load"
+        android:layout_marginStart="8dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/icecream3"
+        app:layout_constraintTop_toTopOf="@+id/ramka" />
+    <ImageView
+        android:id="@+id/icecream5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_load"
+        android:visibility="invisible"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/icecream4"
+        app:layout_constraintTop_toTopOf="@+id/ramka" />
+    <ImageView
+        android:id="@+id/icecream6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_load"
+        android:visibility="invisible"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/icecream5"
+        app:layout_constraintTop_toTopOf="@+id/ramka" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="80dp"
+        android:text="0"
+        android:visibility="visible"
+        android:textSize="42sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_height="60dp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="640dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <ImageButton
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/w"
+        android:visibility="invisible"
+        android:src="@drawable/bott_play"
+        android:clickable="true"
+        android:layout_marginTop="700dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

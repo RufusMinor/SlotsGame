@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fon2">
+
+
+    <ImageButton
+        android:id="@+id/back_lotto"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@color/w"
+        android:src="@drawable/bott_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageButton>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="150dp"
+    android:layout_marginStart="45dp">
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/card1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:flipOnTouch="true"
+        app:flipEnabled="true"
+        app:flipDuration="400"
+        app:flipType="vertical"
+        app:flipFrom="front"
+        app:autoFlipBackTime="1000"
+        >
+
+        <!-- Back Layout Goes Here -->
+        <include layout="@layout/front" />
+
+        <!-- Front Layout Goes Here -->
+        <include
+            layout="@layout/win" />
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/card2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:flipOnTouch="true"
+        android:clickable="true"
+        app:flipEnabled="true"
+        app:flipDuration="400"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:flipType="vertical"
+        app:flipFrom="front"
+        app:autoFlipBackTime="1000"
+        >
+
+        <!-- Back Layout Goes Here -->
+        <include layout="@layout/front2"/>
+
+        <!-- Front Layout Goes Here -->
+        <include
+            layout="@layout/win"
+            android:layout_height="wrap_content"
+            android:layout_width="100dp" />
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/card3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:flipOnTouch="true"
+        app:flipEnabled="true"
+        android:clickable="true"
+        app:flipDuration="400"
+        app:flipType="vertical"
+        app:flipFrom="front"
+        app:autoFlipBackTime="1000"
+        >
+
+        <!-- Back Layout Goes Here -->
+        <include layout="@layout/front3"/>
+
+        <!-- Front Layout Goes Here -->
+        <include
+            layout="@layout/win"
+            android:layout_height="wrap_content"
+            android:layout_width="100dp" />
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp">
+
+        <com.wajahatkarim3.easyflipview.EasyFlipView
+            android:id="@+id/card4"
+            android:layout_width="100dp"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            app:flipOnTouch="true"
+            app:flipEnabled="true"
+            app:flipDuration="400"
+            app:flipType="vertical"
+            app:flipFrom="front"
+            app:autoFlipBackTime="1000"
+            >
+
+            <!-- Back Layout Goes Here -->
+            <include layout="@layout/front4"/>
+
+            <!-- Front Layout Goes Here -->
+            <include
+                layout="@layout/win" />
+
+        </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+        <com.wajahatkarim3.easyflipview.EasyFlipView
+            android:id="@+id/card5"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            app:flipOnTouch="true"
+            android:clickable="true"
+            app:flipEnabled="true"
+            app:flipDuration="400"
+            app:flipType="vertical"
+            app:flipFrom="front"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:autoFlipBackTime="1000"
+            >
+
+            <!-- Back Layout Goes Here -->
+            <include layout="@layout/front5"/>
+
+            <!-- Front Layout Goes Here -->
+            <include
+                layout="@layout/win"
+                android:layout_height="wrap_content"
+                android:layout_width="100dp" />
+
+        </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+        <com.wajahatkarim3.easyflipview.EasyFlipView
+            android:id="@+id/card6"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            app:flipOnTouch="true"
+            app:flipEnabled="true"
+            android:clickable="true"
+            app:flipDuration="400"
+            app:flipType="vertical"
+            app:flipFrom="front"
+            app:autoFlipBackTime="1000"
+            >
+
+            <!-- Back Layout Goes Here -->
+            <include layout="@layout/front6"/>
+
+            <!-- Front Layout Goes Here -->
+            <include
+                layout="@layout/win"
+                android:layout_height="wrap_content"
+                android:layout_width="100dp" />
+
+        </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

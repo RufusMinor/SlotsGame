@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/lottoKarta"
+        android:layout_width="99dp"
+        android:layout_height="161dp"
+        android:background="@color/w"
+        android:src="@drawable/karta_win"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/winMoney2"
+        android:layout_width="60sp"
+        android:layout_height="25sp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/lottoKarta"
+        app:layout_constraintEnd_toEndOf="@+id/lottoKarta"
+        app:layout_constraintStart_toStartOf="@+id/lottoKarta"
+        app:layout_constraintTop_toTopOf="@+id/lottoKarta"></TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
